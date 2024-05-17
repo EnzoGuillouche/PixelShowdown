@@ -1,7 +1,7 @@
 # Pixel Showdown
 
 The project Pixel Showdown has been started as a worshop in C++ courses, endorsed by Alan Méziane Dahmam at ALGOSUP.<br>
-However, this is the Unity-based version, used to go further on the project.<br>
+However, this is the Unity-based version, used to go further on the project. We now use C#.<br><br>
 This game is 2D versus-fighting game. 2 players can play (1v1) with Xbox Controllers.
 Each player has 3 lives, and if your opponent doesn't have any lives left, you win!<br>
 ![image](https://github.com/EnzoGuillouche/PixelShowdown/assets/145991192/54117f54-ef5b-4829-b57a-378fee5539ae)
