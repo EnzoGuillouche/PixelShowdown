@@ -23,6 +23,20 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private bool _isJumping = false;
+    public bool isJumping
+    {
+        get
+        {
+            return _isJumping;
+        }
+        private set
+        {
+            _isJumping = value;
+            animator.SetBool("isJumping", value);
+        }
+    }
+
     public bool _isFacingRight = true;
     public bool isFacingRight {
         get
@@ -69,6 +83,11 @@ public class PlayerController : MonoBehaviour
         isMoving = moveInput != Vector2.zero;
 
         SetFacingDirection(moveInput);
+    }
+
+    public void onJump()
+    {
+        isJumping = !isJumping;
     }
 
     private void SetFacingDirection(Vector2 moveInput)
