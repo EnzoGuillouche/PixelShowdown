@@ -6,7 +6,7 @@ public class EnterToMainMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.anyKeyDown)
         {
             mainMenu.SetActive(true); // Affiche le menu principal
             // Vous pouvez également désactiver d'autres éléments de la scène si nécessaire

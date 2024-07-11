@@ -3670,7 +3670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1613864362
 Transform:
   m_ObjectHideFlags: 0
@@ -3970,7 +3970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PRESS ENTER TO CONTINUE
+  m_text: PRESS ANY BUTTON TO CONTINUE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 644300194cab95843ac6e9dd23a4c7da, type: 2}
   m_sharedMaterial: {fileID: -4041041213902374313, guid: 644300194cab95843ac6e9dd23a4c7da, type: 2}
