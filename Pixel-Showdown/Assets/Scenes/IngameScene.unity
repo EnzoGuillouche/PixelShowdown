@@ -637,21 +637,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &1533163412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410363935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950e5fc09f88494489804950acb0fba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gravityModifier: 1
-  speed: 10
-  jump: 20
 --- !u!61 &1533163413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -678,6 +663,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.125, y: 2.3125}
   m_EdgeRadius: 0
+--- !u!114 &1533163419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410363935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950e5fc09f88494489804950acb0fba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jump: 10
+  _isFacingRight: 1
 --- !u!1001 &1893896549972309284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -914,5 +914,5 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 1893896549689138873, guid: c434ea47c16576348a5ff190aff53648, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c434ea47c16576348a5ff190aff53648, type: 3}
