@@ -126,11 +126,6 @@ MonoBehaviour:
   dashDistance: 5
   dashDuration: 0.2
   crouchSpeedMultiplier: 0.5
-  groundCheck: {fileID: 0}
-  groundCheckRadius: 0.2
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &5931585515179755856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,10 +151,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 73900b65-9a8f-425c-9270-d2b079ab194c
-    m_ActionName: Menu/New action
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 8c9649a0-f5dd-4167-8d9b-56f65b4a8d66

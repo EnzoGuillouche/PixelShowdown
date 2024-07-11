@@ -4,30 +4,8 @@
         {
             "name": "Menu",
             "id": "cd2e7107-d317-4654-9fef-c7752e5c6bf8",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "73900b65-9a8f-425c-9270-d2b079ab194c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "0324411d-0423-4b17-9b6f-5ac93ae7ad74",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
+            "actions": [],
+            "bindings": []
         },
         {
             "name": "InGame",
