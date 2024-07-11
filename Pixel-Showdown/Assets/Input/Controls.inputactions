@@ -271,7 +271,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Left&RightKeyboard",
+                    "name": "Left&Right Keyboard",
                     "id": "2c861acb-0236-4e55-a544-b79cb3f8b94c",
                     "path": "2DVector",
                     "interactions": "",
@@ -304,9 +304,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Left&RightGamepad",
+                    "name": "Left&Right Analog",
                     "id": "30048990-b032-461c-8da2-f01581adecda",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
