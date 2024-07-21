@@ -4,90 +4,104 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-  
-    protected Vector2 velocity;
-    private Rigidbody2D rb;
+    // variables
+    Rigidbody2D rb;
 
-    private float Move;
-    public float speed;
-    public float jump;
-    bool grounded;
-    bool hasJumpedTwice;
-
-    // animations' variables
+    private float moveInput;
+    public float speed = 10f;
+    public float jump = 10f;
+    public bool grounded;
+    public bool isCrouching = false;
+    public bool hasJumpedTwice;
+    public bool isFacingRight = true;
 
     Animator animator;
 
-    private bool _isMoving = false;
-    public bool isMoving
-    {
-        get
-        {
-            return _isMoving;
-        }
-        private set
-        {
-            _isMoving = value;
-            animator.SetBool("isMoving", value);
-        }
-    }
-
-    public bool _isFacingRight = true;
-    public bool isFacingRight
-    {
-        get
-        {
-            return _isFacingRight;
-        }
-        private set
-        {
-            if (_isFacingRight != value)
-            {
-                transform.localScale *= new Vector2(-1, 1);
-            }
-
-            _isFacingRight = value;
-        }
-    }
 
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        Crouch();
+
+        Move();
+
+        Jump();
+    }
+
+    private void Move()
+    {
         // get the character's movement
-        Move = Input.GetAxisRaw("Horizontal");
+        moveInput = Input.GetKeyDown(UserInputs.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal");
 
         // animations' conditions
-        isMoving = Move != 0;
-        if (Move > 0 && !isFacingRight) 
-        { 
-            isFacingRight = true;
-        } else if (Move < 0 && isFacingRight)
+        if (moveInput != 0)
         {
-            isFacingRight = false;
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
+
+        if (moveInput > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (moveInput < 0 && isFacingRight)
+        {
+            Flip();
         }
 
         // apply the movement's speed
-        rb.velocity = new Vector2(Move * speed, rb.velocity.y);
+        if (!isCrouching)
+        {
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+    }
 
+    private void Jump() 
+    {
         // apply the jump action (double jump management)
-        if (Input.GetButtonDown("Jump") && !hasJumpedTwice)
+        if (Input.GetKeyDown(UserInputs.currentInputs["Jump"]) && !hasJumpedTwice)
         {
             if (!grounded)
-            { 
+            {
                 hasJumpedTwice = true;
             }
             rb.velocity = new Vector2(rb.velocity.x, jump);
 
         }
+    }
 
+    private void Crouch()
+    {
+        // apply the crouch conditions
+        if (Input.GetKey(UserInputs.currentInputs["Crouch"]) && grounded)
+        {
+            animator.SetBool("isCrouching", true);
+            isCrouching = true;
+        }
+        else 
+        {
+            animator.SetBool("isCrouching", false);
+            isCrouching = false;
+        }
+    }
+
+    private void Flip()
+    {
+        transform.localScale *= new Vector2(-1, 1);
+        isFacingRight = !isFacingRight;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
