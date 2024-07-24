@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 using System;
 
-public class UserInputs : MonoBehaviour
+public class UserInputs1 : MonoBehaviour
 {
     // accessible data
     public static float SoundVolume;

@@ -1,0 +1,1795 @@
+fileFormatVersion: 2
+guid: 7ea15a4989a4b3f488c50f30371c20f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gutsSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 574
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64e3e614011e884899734cd998b173c
+      internalID: 1279867038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 574
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61de6a280bf3e6469d45837c3930c0c
+      internalID: 834962028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 574
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d1471d971c4b4408aa28c62c7641f3
+      internalID: 128837184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 574
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21861f67c3c3417468ff26ecdbc8f3c9
+      internalID: 1493531077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 574
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97491368802412946beb09c5e0a7751f
+      internalID: -1703030659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 574
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8f767cf23885243a21ce3f12cd7580
+      internalID: -1062553160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 574
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715b45b4bca37a54d98fc5b8cf14b13b
+      internalID: -748639707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 517
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ab678ce196ce1469369ecd4a285b0f
+      internalID: -2086031451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 517
+        width: 31
+        height: 43
+      alignment: 9
+      pivot: {x: 0.6568992, y: 0.54543287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adcefc8b1dc89241964e75fb931eb9a
+      internalID: 1055435558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 517
+        width: 31
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6793134, y: 0.53763336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20586a3d4e3ba24f9fbbcc05faeddd1
+      internalID: -1687667761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 517
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7017271, y: 0.5251449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4716d54b3aa52d4c985d7cce4887823
+      internalID: 1056851312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 517
+        width: 35
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5595581, y: 0.5565569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452c90548f31cdb4eb25bfb8eac5e39c
+      internalID: 1668476196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 517
+        width: 31
+        height: 41
+      alignment: 9
+      pivot: {x: 0.72414273, y: 0.5461069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7858a6f20fbe54544aa082e14139f13b
+      internalID: 1235499163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 517
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7129359, y: 0.5708586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4d9161ce3e6f547a4157b65397cf55
+      internalID: 1828636561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 459
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899d66f6145f9974a8b1b29e110e6d7b
+      internalID: -1099372686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 459
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3dae09361d66746ac2b97f163d5929
+      internalID: -1703100389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 462
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944d6eae5791a884d8d27407379c88d8
+      internalID: 1882164890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 472
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9302bdb04c879124585856188423b418
+      internalID: -1408812992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 472
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c1486ba98d3574ba76ecfaabe365b2
+      internalID: 2132020664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 473
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9e39f670c96264fada5cbc3b833929
+      internalID: 2051146607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 469
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42799cfbcbebaa34f83bd87631adf235
+      internalID: 1325154440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 411
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75806ea4788e4547873c434ef20b4ec
+      internalID: -854940024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 408
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925dfeda320bc634ea60a54f034ab76c
+      internalID: 1723780960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 408
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c860f36a2389b84cbe580469eb3d66d
+      internalID: -453950047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 402
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9120c16f89ad6247b6a361f84cc8dec
+      internalID: -1885920130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 402
+        width: 53
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a4623904333f04e99e8ab9e338c462
+      internalID: -663736010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 402
+        width: 53
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29633c9ef41e5ac44a3c290057165fb9
+      internalID: 572707828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 402
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37cd53a2dccbc94d9481d5d0ecee5ec
+      internalID: 1619127161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 345
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cbbd13be1eaad4d8ce1643e6b29804
+      internalID: 1419844728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 343
+        width: 20
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56a0c717660f4c4ebe9b325c378e264
+      internalID: 1011751499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 343
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b1da57a149c4c4688d385c5ad5c3fb
+      internalID: 437670624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 343
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956abf4d2dae9a548ad8af106cdfd3e0
+      internalID: 322198945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 343
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f0b8dc47d4c574293518c7e2b52dd1
+      internalID: -441270124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 346
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e50306d575d49741bbba993ac6c73c5
+      internalID: 1960203071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 349
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00048fadcc97574caffcb9b7b0110e5
+      internalID: -1452514715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 294
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c050bdc038a4644bae0e0e4626e49e
+      internalID: 1032481125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 297
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e30b03034b1e9b409dfc1e2c313a2d5
+      internalID: -695635921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 297
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe849783001d5648a286e0c27249f86
+      internalID: 911363393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 287
+        width: 36
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9aef7e17de31d4e89e3523f52a66d0
+      internalID: 684076464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 287
+        width: 35
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230a38945beb93144a5065a52a39bf63
+      internalID: -1098838263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 287
+        width: 38
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f4cd645b5050545aa522d2dbe0a7d0
+      internalID: -7799938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 287
+        width: 39
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c449170b7e6f83642a906f4ef68cc254
+      internalID: -1001240106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 230
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbe55778ee28b5459c13ee4e5f13301
+      internalID: -945390518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 230
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3e935b15c0bbb4bbe46e8ff546fd33
+      internalID: 1010164573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 230
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec7bf7dd11293b4d95ee4c024be3dc0
+      internalID: -1146426307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 230
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ccbb65d15c90f408671b42ad891ecf
+      internalID: 1818326176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 230
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc08e30d2b47964dbedc7ecd5f3d553
+      internalID: -1211811842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 230
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37b07e47d72a7b4c9856794b438d199
+      internalID: 7086377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 230
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d709bf8dac214674ebc237e7fb00f1d4
+      internalID: 105381642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 173
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362d6e5e2fb20ba42b0f1a279dc0ba43
+      internalID: 261249982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 173
+        width: 59
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92318a86ad55ff944a771dd8107a2b8c
+      internalID: 1064705402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 173
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586a743ea2471be46b1a8a181f605e39
+      internalID: 1539801332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 173
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c1dfe67d453524ca9778c0ee1fd5b3
+      internalID: -1834358586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 173
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eaa0f81e6e68440805aa6e91567746
+      internalID: -429348800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 173
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6c56eb6ffe34440bc60e174aa09dd3
+      internalID: -121857518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 173
+        width: 74
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff8424f68dbd774a98faa5ab1432df9
+      internalID: 1563637794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 116
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de468619a4914394d9a72b99a16b9910
+      internalID: -120519768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 116
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc0d3c9a8b7d1b478a5e38dc75fe527
+      internalID: -596437227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 116
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c302f972576a24ab6b054a45ac10e2
+      internalID: -740440074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 116
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3125f6b8b05aa2b478984dd2471a0efc
+      internalID: 904753339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 116
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf5b159bb29b0e45bb0ae8ae63db2de
+      internalID: 1260335214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 116
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcd6ee9713729c45822a1d0adf775e1
+      internalID: -1150835277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 116
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edaa94bb6ef8fd843a436919a2098d17
+      internalID: -1557687283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 58
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910e585bfde87f748b38cb5b184afddc
+      internalID: -1830402717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 58
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f6b24c524455a488c714a9ed02a16b
+      internalID: 1621996997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 58
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec208b428f80064380a099ccbf5db01
+      internalID: 1685425726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 58
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756c493eb6f915242aafd9d37dc4bf0a
+      internalID: 1207458669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 58
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4d7a6c2b4cb60489445c65a6aac773
+      internalID: 1891976774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 58
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac6018f15451b84b9b59505546bbf16
+      internalID: 1525543045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 58
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55026e10be46a814a8d94f0707703eb5
+      internalID: -1763899288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f55bf48483c1b4da231e8550427d03
+      internalID: 1310855749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fbc153d7b2a73439078ac106a5b831
+      internalID: -1735429888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 6
+        width: 42
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4c485b9e9371c48a616b0a9e46f8ff
+      internalID: -343030193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 6
+        width: 42
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69689e5125e60ec43b95c28ec5d1cf80
+      internalID: 318727935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 6
+        width: 42
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce1be41053cfea439e4e5b440e03d66
+      internalID: 1991239632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 5
+        width: 42
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883df873f5c1fbb49b6ed9d866598f42
+      internalID: 1620305836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gutsSpriteSheet_13: 1828636561
+      gutsSpriteSheet_58: -740440074
+      gutsSpriteSheet_7: -2086031451
+      gutsSpriteSheet_54: -121857518
+      gutsSpriteSheet_41: -1001240106
+      gutsSpriteSheet_34: -1452514715
+      gutsSpriteSheet_42: -945390518
+      gutsSpriteSheet_62: -1557687283
+      gutsSpriteSheet_3: 1493531077
+      gutsSpriteSheet_49: 261249982
+      gutsSpriteSheet_20: 1325154440
+      gutsSpriteSheet_37: 911363393
+      gutsSpriteSheet_72: -343030193
+      gutsSpriteSheet_2: 128837184
+      gutsSpriteSheet_53: -429348800
+      gutsSpriteSheet_10: 1056851312
+      gutsSpriteSheet_48: 105381642
+      gutsSpriteSheet_9: -1687667761
+      gutsSpriteSheet_56: -120519768
+      gutsSpriteSheet_24: -1885920130
+      gutsSpriteSheet_60: 1260335214
+      gutsSpriteSheet_57: -596437227
+      gutsSpriteSheet_67: 1891976774
+      gutsSpriteSheet_70: 1310855749
+      gutsSpriteSheet_15: -1703100389
+      gutsSpriteSheet_18: 2132020664
+      gutsSpriteSheet_66: 1207458669
+      gutsSpriteSheet_4: -1703030659
+      gutsSpriteSheet_28: 1419844728
+      gutsSpriteSheet_33: 1960203071
+      gutsSpriteSheet_68: 1525543045
+      gutsSpriteSheet_51: 1539801332
+      gutsSpriteSheet_61: -1150835277
+      gutsSpriteSheet_74: 1991239632
+      gutsSpriteSheet_55: 1563637794
+      gutsSpriteSheet_17: -1408812992
+      gutsSpriteSheet_71: -1735429888
+      gutsSpriteSheet_5: -1062553160
+      gutsSpriteSheet_22: 1723780960
+      gutsSpriteSheet_21: -854940024
+      gutsSpriteSheet_47: 7086377
+      gutsSpriteSheet_73: 318727935
+      gutsSpriteSheet_6: -748639707
+      gutsSpriteSheet_11: 1668476196
+      gutsSpriteSheet_14: -1099372686
+      gutsSpriteSheet_16: 1882164890
+      gutsSpriteSheet_43: 1010164573
+      gutsSpriteSheet_32: -441270124
+      gutsSpriteSheet_65: 1685425726
+      gutsSpriteSheet_46: -1211811842
+      gutsSpriteSheet_0: 1279867038
+      gutsSpriteSheet_39: -1098838263
+      gutsSpriteSheet_52: -1834358586
+      gutsSpriteSheet_63: -1830402717
+      gutsSpriteSheet_64: 1621996997
+      gutsSpriteSheet_19: 2051146607
+      gutsSpriteSheet_25: -663736010
+      gutsSpriteSheet_36: -695635921
+      gutsSpriteSheet_75: 1620305836
+      gutsSpriteSheet_27: 1619127161
+      gutsSpriteSheet_45: 1818326176
+      gutsSpriteSheet_31: 322198945
+      gutsSpriteSheet_44: -1146426307
+      gutsSpriteSheet_38: 684076464
+      gutsSpriteSheet_69: -1763899288
+      gutsSpriteSheet_50: 1064705402
+      gutsSpriteSheet_8: 1055435558
+      gutsSpriteSheet_23: -453950047
+      gutsSpriteSheet_29: 1011751499
+      gutsSpriteSheet_12: 1235499163
+      gutsSpriteSheet_35: 1032481125
+      gutsSpriteSheet_40: -7799938
+      gutsSpriteSheet_1: 834962028
+      gutsSpriteSheet_26: 572707828
+      gutsSpriteSheet_59: 904753339
+      gutsSpriteSheet_30: 437670624
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
