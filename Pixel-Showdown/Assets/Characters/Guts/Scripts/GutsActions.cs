@@ -11,15 +11,18 @@ public class GutsActions : MonoBehaviour
 
     private float moveInput;
     public float speed = 12f;
+    public float airSpeed = 8f;
     public float jump = 15f;
     public float Djump = 20f;
+    public float dashDistance = 50f;
+    public float delay = 1f;
     public bool grounded;
+    public bool canMove = true;
     public bool cannotGoLeft = false;
     public bool cannotGoRight = false;
     public bool isCrouching = false;
     public bool hasJumpedTwice;
     public bool isFacingRight = true;
-    public int averageGravity = 4;
 
     Animator animator;
 
@@ -27,70 +30,79 @@ public class GutsActions : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        rb.gravityScale = averageGravity;
+        rb.gravityScale = 4;
     }
 
     void Update()
     {
-        Crouch();
+            Crouch();
 
-        Move();
+            Move();
 
-        Jump();
+            Jump();
+
+           StartCoroutine(Dash());
     }
 
     private void Move()
     {
-        // get the character's movement
-        moveInput = Input.GetKeyDown(UserInputs1.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal");
-
-        // animations' conditions
-        if (moveInput != 0)
-        {
-            animator.SetBool("isMoving", true);
-        }
-        else
-        {
-            animator.SetBool("isMoving", false);
-        }
-
-        // flip the sprite, depending on the orientation
-        if (moveInput > 0 && !isFacingRight && grounded && !isCrouching)
-        {
-            Flip();
-        }
+        if (canMove){
+            // get the character's movement
+            moveInput = Input.GetKeyDown(UserInputs1.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal");
         
-        else if (moveInput < 0 && isFacingRight && grounded && !isCrouching)
-        {
-            Flip();
-        }
+            // animations' conditions
+            if (moveInput != 0)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            else
+            {
+                animator.SetBool("isMoving", false);
+            }
 
-        // apply the movement's speed (wall collisions management)
-        if (!isCrouching && !((cannotGoLeft && moveInput < 0) || (cannotGoRight && moveInput > 0)))
-        {
-            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            // flip the sprite, depending on the orientation
+            if (moveInput > 0 && !isFacingRight && grounded && !isCrouching)
+            {
+                Flip();
+            }
+            
+            else if (moveInput < 0 && isFacingRight && grounded && !isCrouching)
+            {
+                Flip();
+            }
+
+            // apply the movement's speed (wall collisions management)
+            if (!isCrouching && !((cannotGoLeft && moveInput < 0) || (cannotGoRight && moveInput > 0)))
+            {
+                rb.velocity = new Vector2(grounded ? moveInput * speed : moveInput * airSpeed, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
         }
     }
 
     private void Jump() 
     {
         // apply the jump action (double jump management)
-        if (Input.GetKeyDown(UserInputs1.currentInputs["Jump"]) && !hasJumpedTwice)
+        if (Input.GetKeyDown(UserInputs1.currentInputs["Jump"]) && !hasJumpedTwice && canMove)
         {
             if (!grounded)
             {
                 hasJumpedTwice = true;
-                animator.SetTrigger("doubleJumped");
-                rb.velocity = new Vector2(rb.velocity.x, Djump);
+                if (rb.velocity.x < 0 && isFacingRight){
+                    animator.SetTrigger("reverseDoubleJumped");
+                }
+                else if (rb.velocity.x > 0 && !isFacingRight){
+                    animator.SetTrigger("reverseDoubleJumped");
+                }
+                else{
+                    animator.SetTrigger("doubleJumped");
+                }
             }
-            else
-            {
-                rb.velocity = new Vector2(rb.velocity.x, jump);
-            }
+            rb.velocity = new Vector2(rb.velocity.x, grounded ? jump : Djump);
+            
         }
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
@@ -98,7 +110,7 @@ public class GutsActions : MonoBehaviour
     private void Crouch()
     {
         // apply the crouch conditions
-        if (Input.GetKey(UserInputs1.currentInputs["Crouch"]) && grounded)
+        if (Input.GetKey(UserInputs1.currentInputs["Crouch"]) && grounded && canMove)
         {
             animator.SetBool("isCrouching", true);
             isCrouching = true;
@@ -107,6 +119,25 @@ public class GutsActions : MonoBehaviour
         {
             animator.SetBool("isCrouching", false);
             isCrouching = false;
+        }
+    }
+
+    private IEnumerator Dash()
+    {
+        // apply the velocity and the anim depending on dash conditions
+        if (Input.GetKeyDown(UserInputs1.currentInputs["Dash"]) && canMove){
+            animator.SetBool("isDashing", true);
+            canMove = false;
+            rb.gravityScale = 0;
+            while (delay > 0){
+                rb.velocity = new Vector2(isFacingRight ? dashDistance : -dashDistance, 0);
+                delay -= Time.deltaTime;
+                yield return null;
+            }
+            animator.SetBool("isDashing", false);
+            delay = 0.25f;
+            canMove = true;
+            rb.gravityScale = 4;
         }
     }
 
