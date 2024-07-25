@@ -7,6 +7,10 @@ Sound
 D
 -X
 A
++Y
+W
+-Y
+S
 Start
 Escape
 Jump
@@ -29,6 +33,10 @@ Backspace
 +X
 None
 -X
+None
++Y
+None
+-Y
 None
 Start
 JoystickButton7

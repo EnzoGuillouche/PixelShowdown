@@ -19,6 +19,8 @@ public class UserInputs1 : MonoBehaviour
     {
         {"+X", KeyCode.D},
         {"-X", KeyCode.A},
+        {"+Y", KeyCode.W},
+        {"-Y", KeyCode.S},
         {"Start", KeyCode.Escape},
         {"Jump", KeyCode.Space},
         {"Dash", KeyCode.LeftShift},
@@ -33,6 +35,8 @@ public class UserInputs1 : MonoBehaviour
     {
         {"+X", KeyCode.None},
         {"-X", KeyCode.None},
+        {"+Y", KeyCode.None},
+        {"-Y", KeyCode.None},
         {"Start", KeyCode.JoystickButton7},
         {"Jump", KeyCode.JoystickButton0}, // A
         {"Dash", KeyCode.JoystickButton5}, // RB

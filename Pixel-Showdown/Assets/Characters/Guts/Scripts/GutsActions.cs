@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GutsActions : MonoBehaviour
 {
-    // variables
+    #region Variables
     Rigidbody2D rb;
 
     private float moveInput;
@@ -17,32 +17,16 @@ public class GutsActions : MonoBehaviour
     public float dashDistance = 50f;
     public float delay = 1f;
     public bool grounded;
-    public bool canMove = true;
+    public bool canMove;
     public bool cannotGoLeft = false;
     public bool cannotGoRight = false;
     public bool isCrouching = false;
     public bool hasJumpedTwice;
     public bool isFacingRight = true;
-
     Animator animator;
+    #endregion
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        rb.gravityScale = 4;
-    }
-
-    void Update()
-    {
-            Crouch();
-
-            Move();
-
-            Jump();
-
-           StartCoroutine(Dash());
-    }
+    #region Actions Functions
 
     private void Move()
     {
@@ -61,12 +45,12 @@ public class GutsActions : MonoBehaviour
             }
 
             // flip the sprite, depending on the orientation
-            if (moveInput > 0 && !isFacingRight && grounded && !isCrouching)
+            if (moveInput > 0 && !isFacingRight && grounded && !isCrouching && !animator.GetBool("isDashing"))
             {
                 Flip();
             }
             
-            else if (moveInput < 0 && isFacingRight && grounded && !isCrouching)
+            else if (moveInput < 0 && isFacingRight && grounded && !isCrouching && !animator.GetBool("isDashing"))
             {
                 Flip();
             }
@@ -82,7 +66,6 @@ public class GutsActions : MonoBehaviour
             }
         }
     }
-
     private void Jump() 
     {
         // apply the jump action (double jump management)
@@ -106,7 +89,6 @@ public class GutsActions : MonoBehaviour
         }
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
-
     private void Crouch()
     {
         // apply the crouch conditions
@@ -121,7 +103,6 @@ public class GutsActions : MonoBehaviour
             isCrouching = false;
         }
     }
-
     private IEnumerator Dash()
     {
         // apply the velocity and the anim depending on dash conditions
@@ -140,13 +121,29 @@ public class GutsActions : MonoBehaviour
             rb.gravityScale = 4;
         }
     }
-
+    private void Attack(){
+        // apply the attack 1 conditions and actions
+        if (Input.GetKeyDown(UserInputs1.currentInputs["Attack"]) && canMove && grounded && !isCrouching){
+            animator.SetTrigger("attack");
+            float verticalInput = Input.GetKeyDown(UserInputs1.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical");
+            if (verticalInput > 0){
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("attack3");
+            }
+            else if (rb.velocity.x != 0){
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("attack2");
+            }
+            else {
+                animator.SetTrigger("attack1");
+            }
+        }
+    }
     private void Flip()
     {
         transform.localScale *= new Vector2(-1, 1);
         isFacingRight = !isFacingRight;
     }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
@@ -166,7 +163,6 @@ public class GutsActions : MonoBehaviour
             // hasJumpedTwice = false; // for wall jump
         }
     }
-
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
@@ -183,4 +179,29 @@ public class GutsActions : MonoBehaviour
             cannotGoRight = false;
         }
     }
+    #endregion
+
+    #region System Functions
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        rb.gravityScale = 4;
+    }
+
+    void Update()
+    {
+           canMove = animator.GetBool("canMove");
+
+            Crouch();
+
+            Move();
+
+            Jump();
+
+           StartCoroutine(Dash());
+
+           Attack();
+    }
+    #endregion
 }
