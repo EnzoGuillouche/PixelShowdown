@@ -15,7 +15,8 @@ public class GutsActions : MonoBehaviour
     public float jump = 15f;
     public float Djump = 20f;
     public float dashDistance = 50f;
-    public float delay = 1f;
+    public float dashDelay = 0.25f;
+    public static float dashCooldown = 5f;
     public bool grounded;
     public bool canMove;
     public bool cannotGoLeft = false;
@@ -106,19 +107,25 @@ public class GutsActions : MonoBehaviour
     private IEnumerator Dash()
     {
         // apply the velocity and the anim depending on dash conditions
-        if (Input.GetKeyDown(UserInputs1.currentInputs["Dash"]) && canMove){
+        if (Input.GetKeyDown(UserInputs1.currentInputs["Dash"]) && canMove && dashCooldown >= 5f){
+            dashCooldown = 0f;
             animator.SetBool("isDashing", true);
             canMove = false;
             rb.gravityScale = 0;
-            while (delay > 0){
+            while (dashDelay > 0){
                 rb.velocity = new Vector2(isFacingRight ? dashDistance : -dashDistance, 0);
-                delay -= Time.deltaTime;
+                dashDelay -= Time.deltaTime;
                 yield return null;
             }
             animator.SetBool("isDashing", false);
-            delay = 0.25f;
+            dashDelay = 0.25f;
             canMove = true;
             rb.gravityScale = 4;
+        }
+        // dash cooldown
+        else if (dashCooldown < 5f) {
+            dashCooldown += Time.deltaTime;
+            yield return null;
         }
     }
     private void Attack(){
