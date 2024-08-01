@@ -108,10 +108,10 @@ TextureImporter:
       name: gutsSpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 574
-        width: 30
-        height: 45
+        x: 20
+        y: 579
+        width: 27
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: gutsSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 103
-        y: 574
-        width: 26
-        height: 46
+        x: 93
+        y: 579
+        width: 24
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: gutsSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 179
-        y: 574
-        width: 29
-        height: 46
+        x: 162
+        y: 579
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: gutsSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 253
-        y: 574
-        width: 31
-        height: 45
+        x: 229
+        y: 579
+        width: 28
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: gutsSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 335
-        y: 574
-        width: 29
-        height: 32
+        x: 304
+        y: 579
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: gutsSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 411
-        y: 574
-        width: 31
-        height: 34
+        x: 372
+        y: 579
+        width: 28
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: gutsSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 488
-        y: 574
-        width: 30
-        height: 32
+        x: 442
+        y: 579
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,12 +255,12 @@ TextureImporter:
       name: gutsSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 27
-        y: 517
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 494
+        y: 578
+        width: 29
+        height: 35
+      alignment: 9
+      pivot: {x: 0.47, y: 0.57}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: gutsSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 104
-        y: 517
-        width: 31
-        height: 43
-      alignment: 9
-      pivot: {x: 0.6568992, y: 0.54543287}
+        x: 25
+        y: 526
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: gutsSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 180
-        y: 517
-        width: 31
-        height: 41
+        x: 94
+        y: 526
+        width: 28
+        height: 40
       alignment: 9
-      pivot: {x: 0.6793134, y: 0.53763336}
+      pivot: {x: 0.65, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,12 +318,12 @@ TextureImporter:
       name: gutsSpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 258
-        y: 517
-        width: 31
+        x: 163
+        y: 526
+        width: 28
         height: 38
       alignment: 9
-      pivot: {x: 0.7017271, y: 0.5251449}
+      pivot: {x: 0.68, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,12 +339,12 @@ TextureImporter:
       name: gutsSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 337
-        y: 517
-        width: 35
-        height: 43
+        x: 234
+        y: 526
+        width: 28
+        height: 35
       alignment: 9
-      pivot: {x: 0.5595581, y: 0.5565569}
+      pivot: {x: 0.7, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: gutsSpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 412
-        y: 517
-        width: 31
-        height: 41
+        x: 305
+        y: 526
+        width: 32
+        height: 40
       alignment: 9
-      pivot: {x: 0.72414273, y: 0.5461069}
+      pivot: {x: 0.56, y: 0.56}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,12 +381,12 @@ TextureImporter:
       name: gutsSpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 490
-        y: 517
-        width: 31
+        x: 373
+        y: 526
+        width: 28
         height: 38
       alignment: 9
-      pivot: {x: 0.7129359, y: 0.5708586}
+      pivot: {x: 0.72, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,12 +402,12 @@ TextureImporter:
       name: gutsSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 24
-        y: 459
-        width: 31
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 444
+        y: 526
+        width: 28
+        height: 35
+      alignment: 9
+      pivot: {x: 0.71, y: 0.57}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,12 +423,12 @@ TextureImporter:
       name: gutsSpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 101
-        y: 459
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 490
+        y: 529
+        width: 29
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,10 +444,10 @@ TextureImporter:
       name: gutsSpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 182
-        y: 462
-        width: 29
-        height: 42
+        x: 22
+        y: 473
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +465,10 @@ TextureImporter:
       name: gutsSpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 254
-        y: 472
-        width: 33
-        height: 35
+        x: 92
+        y: 473
+        width: 28
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: gutsSpriteSheet_18
       rect:
         serializedVersion: 2
-        x: 338
-        y: 472
-        width: 23
-        height: 31
+        x: 165
+        y: 476
+        width: 26
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: gutsSpriteSheet_19
       rect:
         serializedVersion: 2
-        x: 409
-        y: 473
-        width: 36
-        height: 26
+        x: 230
+        y: 485
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: gutsSpriteSheet_20
       rect:
         serializedVersion: 2
-        x: 496
-        y: 469
-        width: 28
-        height: 30
+        x: 306
+        y: 485
+        width: 21
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +549,10 @@ TextureImporter:
       name: gutsSpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 22
-        y: 411
-        width: 36
-        height: 27
+        x: 371
+        y: 486
+        width: 32
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: gutsSpriteSheet_22
       rect:
         serializedVersion: 2
-        x: 106
-        y: 408
+        x: 449
+        y: 482
         width: 26
-        height: 48
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,11 +591,11 @@ TextureImporter:
       name: gutsSpriteSheet_23
       rect:
         serializedVersion: 2
-        x: 183
-        y: 408
-        width: 27
-        height: 47
-      alignment: 0
+        x: 489
+        y: 481
+        width: 30
+        height: 38
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -612,12 +612,12 @@ TextureImporter:
       name: gutsSpriteSheet_24
       rect:
         serializedVersion: 2
-        x: 241
-        y: 402
-        width: 52
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 1}
+        x: 20
+        y: 429
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -633,12 +633,12 @@ TextureImporter:
       name: gutsSpriteSheet_25
       rect:
         serializedVersion: 2
-        x: 318
-        y: 402
-        width: 53
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 1}
+        x: 96
+        y: 427
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -654,12 +654,12 @@ TextureImporter:
       name: gutsSpriteSheet_26
       rect:
         serializedVersion: 2
-        x: 395
-        y: 402
-        width: 53
-        height: 25
-      alignment: 9
-      pivot: {x: 0.5, y: 1}
+        x: 166
+        y: 427
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -675,10 +675,10 @@ TextureImporter:
       name: gutsSpriteSheet_27
       rect:
         serializedVersion: 2
-        x: 479
-        y: 402
-        width: 46
-        height: 26
+        x: 218
+        y: 421
+        width: 48
+        height: 21
       alignment: 9
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,12 +696,12 @@ TextureImporter:
       name: gutsSpriteSheet_28
       rect:
         serializedVersion: 2
-        x: 24
-        y: 345
-        width: 34
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 288
+        y: 421
+        width: 48
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -717,12 +717,12 @@ TextureImporter:
       name: gutsSpriteSheet_29
       rect:
         serializedVersion: 2
-        x: 112
-        y: 343
-        width: 20
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 358
+        y: 421
+        width: 48
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -738,12 +738,12 @@ TextureImporter:
       name: gutsSpriteSheet_30
       rect:
         serializedVersion: 2
-        x: 189
-        y: 343
-        width: 21
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 434
+        y: 421
+        width: 42
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -759,12 +759,12 @@ TextureImporter:
       name: gutsSpriteSheet_31
       rect:
         serializedVersion: 2
-        x: 264
-        y: 343
-        width: 23
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 483
+        y: 432
+        width: 46
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -780,10 +780,10 @@ TextureImporter:
       name: gutsSpriteSheet_32
       rect:
         serializedVersion: 2
-        x: 343
-        y: 343
-        width: 21
-        height: 53
+        x: 102
+        y: 367
+        width: 18
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -801,10 +801,10 @@ TextureImporter:
       name: gutsSpriteSheet_33
       rect:
         serializedVersion: 2
-        x: 420
-        y: 346
-        width: 25
-        height: 45
+        x: 171
+        y: 367
+        width: 19
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,10 +822,10 @@ TextureImporter:
       name: gutsSpriteSheet_34
       rect:
         serializedVersion: 2
-        x: 498
-        y: 349
-        width: 23
-        height: 41
+        x: 239
+        y: 367
+        width: 21
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -843,10 +843,10 @@ TextureImporter:
       name: gutsSpriteSheet_35
       rect:
         serializedVersion: 2
-        x: 31
-        y: 294
-        width: 24
-        height: 37
+        x: 311
+        y: 367
+        width: 19
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -864,12 +864,12 @@ TextureImporter:
       name: gutsSpriteSheet_36
       rect:
         serializedVersion: 2
-        x: 110
-        y: 297
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 480
+        y: 393
+        width: 46
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -882,36 +882,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gutsSpriteSheet_37
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 297
-        width: 23
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fe849783001d5648a286e0c27249f86
-      internalID: 911363393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: gutsSpriteSheet_38
       rect:
         serializedVersion: 2
-        x: 248
-        y: 287
-        width: 36
-        height: 42
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 381
+        y: 370
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -927,12 +906,12 @@ TextureImporter:
       name: gutsSpriteSheet_39
       rect:
         serializedVersion: 2
-        x: 326
-        y: 287
-        width: 35
-        height: 42
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 451
+        y: 373
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,57 +924,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gutsSpriteSheet_40
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 287
-        width: 38
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34f4cd645b5050545aa522d2dbe0a7d0
-      internalID: -7799938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gutsSpriteSheet_41
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 287
-        width: 39
-        height: 44
-      alignment: 9
-      pivot: {x: 0.5171822, y: 0.5253823}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c449170b7e6f83642a906f4ef68cc254
-      internalID: -1001240106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: gutsSpriteSheet_42
       rect:
         serializedVersion: 2
-        x: 11
-        y: 230
-        width: 42
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
+        x: 22
+        y: 369
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1011,12 +948,12 @@ TextureImporter:
       name: gutsSpriteSheet_43
       rect:
         serializedVersion: 2
-        x: 90
-        y: 230
-        width: 39
-        height: 31
+        x: 480
+        y: 362
+        width: 50
+        height: 26
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.74}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1029,36 +966,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gutsSpriteSheet_44
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 230
-        width: 52
-        height: 56
-      alignment: 9
-      pivot: {x: 0.35, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fec7bf7dd11293b4d95ee4c024be3dc0
-      internalID: -1146426307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: gutsSpriteSheet_45
       rect:
         serializedVersion: 2
-        x: 256
-        y: 230
-        width: 42
-        height: 56
-      alignment: 9
-      pivot: {x: 0.4, y: 0.45}
+        x: 28
+        y: 322
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1074,12 +990,12 @@ TextureImporter:
       name: gutsSpriteSheet_46
       rect:
         serializedVersion: 2
-        x: 333
-        y: 230
-        width: 30
-        height: 50
-      alignment: 9
-      pivot: {x: 0.55, y: 0.5}
+        x: 100
+        y: 325
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1095,12 +1011,12 @@ TextureImporter:
       name: gutsSpriteSheet_47
       rect:
         serializedVersion: 2
-        x: 411
-        y: 230
-        width: 28
-        height: 40
-      alignment: 9
-      pivot: {x: 0.46808952, y: 0.55}
+        x: 170
+        y: 325
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1116,10 +1032,10 @@ TextureImporter:
       name: gutsSpriteSheet_48
       rect:
         serializedVersion: 2
-        x: 488
-        y: 230
-        width: 28
-        height: 42
+        x: 225
+        y: 316
+        width: 32
+        height: 38
       alignment: 9
       pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,10 +1053,10 @@ TextureImporter:
       name: gutsSpriteSheet_49
       rect:
         serializedVersion: 2
-        x: 21
-        y: 173
-        width: 31
-        height: 42
+        x: 295
+        y: 316
+        width: 32
+        height: 38
       alignment: 9
       pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1158,12 +1074,12 @@ TextureImporter:
       name: gutsSpriteSheet_50
       rect:
         serializedVersion: 2
-        x: 93
-        y: 173
-        width: 59
-        height: 45
+        x: 364
+        y: 316
+        width: 35
+        height: 40
       alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1179,12 +1095,12 @@ TextureImporter:
       name: gutsSpriteSheet_51
       rect:
         serializedVersion: 2
-        x: 158
-        y: 173
-        width: 50
-        height: 32
+        x: 434
+        y: 316
+        width: 35
+        height: 40
       alignment: 9
-      pivot: {x: 0.7, y: 0.72}
+      pivot: {x: 0.51, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1200,12 +1116,12 @@ TextureImporter:
       name: gutsSpriteSheet_52
       rect:
         serializedVersion: 2
-        x: 236
-        y: 173
-        width: 48
-        height: 34
+        x: 489
+        y: 316
+        width: 28
+        height: 36
       alignment: 9
-      pivot: {x: 0.7, y: 0.68}
+      pivot: {x: 0.5, y: 0.57}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1221,12 +1137,12 @@ TextureImporter:
       name: gutsSpriteSheet_53
       rect:
         serializedVersion: 2
-        x: 340
-        y: 173
-        width: 31
-        height: 40
+        x: 10
+        y: 264
+        width: 38
+        height: 31
       alignment: 9
-      pivot: {x: 0.5, y: 0.57}
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1242,12 +1158,12 @@ TextureImporter:
       name: gutsSpriteSheet_54
       rect:
         serializedVersion: 2
-        x: 419
-        y: 173
-        width: 31
-        height: 40
+        x: 82
+        y: 264
+        width: 35
+        height: 28
       alignment: 9
-      pivot: {x: 0.5, y: 0.57}
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1263,12 +1179,12 @@ TextureImporter:
       name: gutsSpriteSheet_55
       rect:
         serializedVersion: 2
-        x: 468
-        y: 173
-        width: 74
-        height: 35
+        x: 162
+        y: 264
+        width: 47
+        height: 51
       alignment: 9
-      pivot: {x: 0.5, y: 0.67}
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1284,12 +1200,12 @@ TextureImporter:
       name: gutsSpriteSheet_56
       rect:
         serializedVersion: 2
-        x: 5
-        y: 116
-        width: 48
-        height: 29
+        x: 232
+        y: 264
+        width: 38
+        height: 51
       alignment: 9
-      pivot: {x: 0.75, y: 0.78}
+      pivot: {x: 0.4, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1305,12 +1221,12 @@ TextureImporter:
       name: gutsSpriteSheet_57
       rect:
         serializedVersion: 2
-        x: 78
-        y: 116
-        width: 53
-        height: 31
+        x: 302
+        y: 264
+        width: 27
+        height: 45
       alignment: 9
-      pivot: {x: 0.75, y: 0.74}
+      pivot: {x: 0.55, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1326,12 +1242,12 @@ TextureImporter:
       name: gutsSpriteSheet_58
       rect:
         serializedVersion: 2
-        x: 155
-        y: 116
-        width: 53
-        height: 31
+        x: 372
+        y: 264
+        width: 26
+        height: 36
       alignment: 9
-      pivot: {x: 0.75, y: 0.74}
+      pivot: {x: 0.47, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1347,12 +1263,12 @@ TextureImporter:
       name: gutsSpriteSheet_59
       rect:
         serializedVersion: 2
-        x: 258
-        y: 116
-        width: 32
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 442
+        y: 264
+        width: 25
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1368,12 +1284,12 @@ TextureImporter:
       name: gutsSpriteSheet_60
       rect:
         serializedVersion: 2
-        x: 337
-        y: 116
-        width: 27
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 471
+        y: 271
+        width: 68
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.67}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1389,12 +1305,12 @@ TextureImporter:
       name: gutsSpriteSheet_61
       rect:
         serializedVersion: 2
-        x: 411
-        y: 116
-        width: 29
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 19
+        y: 211
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1410,12 +1326,12 @@ TextureImporter:
       name: gutsSpriteSheet_62
       rect:
         serializedVersion: 2
-        x: 490
-        y: 116
-        width: 32
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 84
+        y: 211
+        width: 54
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1431,12 +1347,12 @@ TextureImporter:
       name: gutsSpriteSheet_63
       rect:
         serializedVersion: 2
-        x: 27
-        y: 58
-        width: 28
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 143
+        y: 211
+        width: 46
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7, y: 0.72}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1452,12 +1368,12 @@ TextureImporter:
       name: gutsSpriteSheet_64
       rect:
         serializedVersion: 2
-        x: 101
-        y: 58
-        width: 30
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 217
+        y: 211
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.68}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1473,12 +1389,12 @@ TextureImporter:
       name: gutsSpriteSheet_65
       rect:
         serializedVersion: 2
-        x: 180
-        y: 58
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 308
+        y: 211
+        width: 28
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1494,12 +1410,12 @@ TextureImporter:
       name: gutsSpriteSheet_66
       rect:
         serializedVersion: 2
-        x: 261
-        y: 58
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 380
+        y: 211
+        width: 28
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1515,12 +1431,12 @@ TextureImporter:
       name: gutsSpriteSheet_67
       rect:
         serializedVersion: 2
-        x: 343
-        y: 58
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 424
+        y: 211
+        width: 67
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.67}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1536,12 +1452,12 @@ TextureImporter:
       name: gutsSpriteSheet_68
       rect:
         serializedVersion: 2
-        x: 416
-        y: 58
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 481
+        y: 181
+        width: 54
+        height: 29
+      alignment: 9
+      pivot: {x: 0.55, y: 0.78}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1554,57 +1470,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gutsSpriteSheet_69
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 58
-        width: 36
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55026e10be46a814a8d94f0707703eb5
-      internalID: -1763899288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gutsSpriteSheet_70
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 1
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8f55bf48483c1b4da231e8550427d03
-      internalID: 1310855749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: gutsSpriteSheet_71
       rect:
         serializedVersion: 2
-        x: 106
-        y: 1
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 71
+        y: 159
+        width: 48
+        height: 29
+      alignment: 9
+      pivot: {x: 0.75, y: 0.74}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1620,12 +1494,12 @@ TextureImporter:
       name: gutsSpriteSheet_72
       rect:
         serializedVersion: 2
-        x: 166
-        y: 6
-        width: 42
-        height: 38
+        x: 141
+        y: 159
+        width: 48
+        height: 29
       alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+      pivot: {x: 0.75, y: 0.74}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1641,12 +1515,12 @@ TextureImporter:
       name: gutsSpriteSheet_73
       rect:
         serializedVersion: 2
-        x: 224
-        y: 6
-        width: 42
-        height: 38
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 234
+        y: 159
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1662,12 +1536,12 @@ TextureImporter:
       name: gutsSpriteSheet_74
       rect:
         serializedVersion: 2
-        x: 281
-        y: 6
-        width: 42
-        height: 38
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 305
+        y: 159
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1683,10 +1557,10 @@ TextureImporter:
       name: gutsSpriteSheet_75
       rect:
         serializedVersion: 2
-        x: 336
-        y: 5
-        width: 42
-        height: 38
+        x: 372
+        y: 159
+        width: 27
+        height: 34
       alignment: 9
       pivot: {x: 0.5, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1696,6 +1570,363 @@ TextureImporter:
       bones: []
       spriteID: 883df873f5c1fbb49b6ed9d866598f42
       internalID: 1620305836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 159
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb36afa43db62f459cf5b0d348e5b35
+      internalID: -1822490046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 159
+        width: 43
+        height: 27
+      alignment: 9
+      pivot: {x: 0.75, y: 0.78}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d381ecb081730f649b3a2c7ff77a8c2f
+      internalID: -1707912613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 147
+        width: 54
+        height: 31
+      alignment: 9
+      pivot: {x: 0.6, y: 0.73}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bcdbaa2f486c443b099c16f1042a5d
+      internalID: -678192165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 106
+        width: 25
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c44285515a79d46bd640c1cb6c36c1
+      internalID: -1795851781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 106
+        width: 27
+        height: 34
+      alignment: 9
+      pivot: {x: 0.55, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1d59a21be392848983dffa62828fef
+      internalID: -397077008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 106
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5287badbd31c82b47a60cd2d4a33cb7f
+      internalID: 1539521195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 106
+        width: 23
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debce79ee43794848b2f70323823df83
+      internalID: 1190226884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 106
+        width: 19
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599737c1177c84a43912e7b0f6b107f7
+      internalID: 1053202232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 106
+        width: 23
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6180c73b10d432046801b776c405c7ab
+      internalID: 1195431517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 106
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4724aa251b18334e8ca03775f5f6c9e
+      internalID: -2099479168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 102
+        width: 57
+        height: 38
+      alignment: 9
+      pivot: {x: 0.6, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb046e951ef0504d9251f4a65416699
+      internalID: 541806928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 54
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d3e08bdee2b214f90c67d27934aafc
+      internalID: 1121152257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 54
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99655fc332174a240890b5cad4d65d3f
+      internalID: 1759854491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 59
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f082d2be1de27044d864361d42dfca08
+      internalID: 1165841951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 59
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0177ddc3f465cc5439f320cc1230dd60
+      internalID: -442172639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 59
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e165c04dff62047be397ea4bd0ac6e
+      internalID: 1352665417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gutsSpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 59
+        width: 38
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3c465a2d88cbb48a8ece51503a92e6
+      internalID: 1254287552
       vertices: []
       indices: 
       edges: []
@@ -1711,82 +1942,101 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gutsSpriteSheet_13: 1828636561
+      gutsSpriteSheet_85: 1053202232
       gutsSpriteSheet_58: -740440074
       gutsSpriteSheet_7: -2086031451
       gutsSpriteSheet_54: -121857518
-      gutsSpriteSheet_41: -1001240106
-      gutsSpriteSheet_34: -1452514715
+      gutsSpriteSheet_86: 1195431517
       gutsSpriteSheet_42: -945390518
       gutsSpriteSheet_62: -1557687283
-      gutsSpriteSheet_3: 1493531077
       gutsSpriteSheet_49: 261249982
       gutsSpriteSheet_20: 1325154440
-      gutsSpriteSheet_37: 911363393
-      gutsSpriteSheet_72: -343030193
       gutsSpriteSheet_2: 128837184
       gutsSpriteSheet_53: -429348800
+      gutsSpriteSheet_80: -997304012
       gutsSpriteSheet_10: 1056851312
-      gutsSpriteSheet_48: 105381642
-      gutsSpriteSheet_9: -1687667761
       gutsSpriteSheet_56: -120519768
+      gutsSpriteSheet_9: -1687667761
       gutsSpriteSheet_24: -1885920130
+      gutsSpriteSheet_87: -2099479168
+      gutsSpriteSheet_15: -1703100389
+      gutsSpriteSheet_91: 1165841951
+      gutsSpriteSheet_33: 1960203071
+      gutsSpriteSheet_51: 1539801332
+      gutsSpriteSheet_83: 1539521195
+      gutsSpriteSheet_55: 1563637794
+      gutsSpriteSheet_76: -1822490046
+      gutsSpriteSheet_71: -1735429888
+      gutsSpriteSheet_5: -1062553160
+      gutsSpriteSheet_93: 1352665417
+      gutsSpriteSheet_73: 318727935
+      gutsSpriteSheet_47: 7086377
+      gutsSpriteSheet_65: 1685425726
+      gutsSpriteSheet_39: -1098838263
+      gutsSpriteSheet_52: -1834358586
+      gutsSpriteSheet_63: -1830402717
+      gutsSpriteSheet_64: 1621996997
+      gutsSpriteSheet_25: -663736010
+      gutsSpriteSheet_44: -1146426307
+      gutsSpriteSheet_75: 1620305836
+      gutsSpriteSheet_27: 1619127161
+      gutsSpriteSheet_90: 1759854491
+      gutsSpriteSheet_8: 1055435558
+      gutsSpriteSheet_23: -453950047
+      gutsSpriteSheet_12: 1235499163
+      gutsSpriteSheet_84: 1190226884
+      gutsSpriteSheet_92: -442172639
+      gutsSpriteSheet_13: 1828636561
+      gutsSpriteSheet_41: -1001240106
+      gutsSpriteSheet_34: -1452514715
+      gutsSpriteSheet_78: -1707912613
+      gutsSpriteSheet_3: 1493531077
+      gutsSpriteSheet_37: 911363393
+      gutsSpriteSheet_72: -343030193
       gutsSpriteSheet_60: 1260335214
+      gutsSpriteSheet_48: 105381642
+      gutsSpriteSheet_81: -1795851781
+      gutsSpriteSheet_89: 1121152257
       gutsSpriteSheet_57: -596437227
       gutsSpriteSheet_67: 1891976774
       gutsSpriteSheet_70: 1310855749
-      gutsSpriteSheet_15: -1703100389
       gutsSpriteSheet_18: 2132020664
       gutsSpriteSheet_66: 1207458669
+      gutsSpriteSheet_88: 541806928
       gutsSpriteSheet_4: -1703030659
       gutsSpriteSheet_28: 1419844728
-      gutsSpriteSheet_33: 1960203071
       gutsSpriteSheet_68: 1525543045
-      gutsSpriteSheet_51: 1539801332
       gutsSpriteSheet_61: -1150835277
       gutsSpriteSheet_74: 1991239632
-      gutsSpriteSheet_55: 1563637794
       gutsSpriteSheet_17: -1408812992
-      gutsSpriteSheet_71: -1735429888
-      gutsSpriteSheet_5: -1062553160
       gutsSpriteSheet_22: 1723780960
       gutsSpriteSheet_21: -854940024
-      gutsSpriteSheet_47: 7086377
-      gutsSpriteSheet_73: 318727935
       gutsSpriteSheet_6: -748639707
       gutsSpriteSheet_11: 1668476196
       gutsSpriteSheet_14: -1099372686
       gutsSpriteSheet_16: 1882164890
       gutsSpriteSheet_43: 1010164573
       gutsSpriteSheet_32: -441270124
-      gutsSpriteSheet_65: 1685425726
       gutsSpriteSheet_46: -1211811842
       gutsSpriteSheet_0: 1279867038
-      gutsSpriteSheet_39: -1098838263
-      gutsSpriteSheet_52: -1834358586
-      gutsSpriteSheet_63: -1830402717
-      gutsSpriteSheet_64: 1621996997
       gutsSpriteSheet_19: 2051146607
-      gutsSpriteSheet_25: -663736010
       gutsSpriteSheet_36: -695635921
-      gutsSpriteSheet_75: 1620305836
-      gutsSpriteSheet_27: 1619127161
-      gutsSpriteSheet_45: 1818326176
       gutsSpriteSheet_31: 322198945
-      gutsSpriteSheet_44: -1146426307
+      gutsSpriteSheet_45: 1818326176
+      gutsSpriteSheet_50: 1064705402
+      gutsSpriteSheet_94: 1254287552
       gutsSpriteSheet_38: 684076464
       gutsSpriteSheet_69: -1763899288
-      gutsSpriteSheet_50: 1064705402
-      gutsSpriteSheet_8: 1055435558
-      gutsSpriteSheet_23: -453950047
       gutsSpriteSheet_29: 1011751499
-      gutsSpriteSheet_12: 1235499163
+      gutsSpriteSheet_77: -2132130657
       gutsSpriteSheet_35: 1032481125
-      gutsSpriteSheet_40: -7799938
       gutsSpriteSheet_1: 834962028
+      gutsSpriteSheet_30: 437670624
+      gutsSpriteSheet_40: -7799938
       gutsSpriteSheet_26: 572707828
       gutsSpriteSheet_59: 904753339
-      gutsSpriteSheet_30: 437670624
+      gutsSpriteSheet_82: -397077008
+      gutsSpriteSheet_79: -678192165
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

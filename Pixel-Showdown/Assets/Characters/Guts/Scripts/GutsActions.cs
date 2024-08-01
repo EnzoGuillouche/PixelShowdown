@@ -129,20 +129,31 @@ public class GutsActions : MonoBehaviour
         }
     }
     private void Attack(){
-        // apply the attack 1 conditions and actions
+        float verticalInput = Input.GetKeyDown(UserInputs1.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical");
+        // apply the attacks conditions and actions
         if (Input.GetKeyDown(UserInputs1.currentInputs["Attack"]) && canMove && grounded && !isCrouching){
             animator.SetTrigger("attack");
-            float verticalInput = Input.GetKeyDown(UserInputs1.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical");
-            if (verticalInput > 0){
+            if (verticalInput > 0){ // up tilt
                 rb.velocity = new Vector2(0, rb.velocity.y);
                 animator.SetTrigger("attack3");
             }
-            else if (rb.velocity.x != 0){
+            else if (rb.velocity.x != 0){ // f tilt
                 rb.velocity = new Vector2(0, rb.velocity.y);
                 animator.SetTrigger("attack2");
             }
-            else {
+            else { // jab
                 animator.SetTrigger("attack1");
+            }
+        }
+        // apply the attacks conditions and actions
+        else if (Input.GetKeyDown(UserInputs1.currentInputs["SpeAttack"]) && canMove && grounded && !isCrouching){
+            animator.SetTrigger("attack");
+            if (rb.velocity.x != 0){ // side b
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("spe2");
+            }
+            else { // neutral b
+                animator.SetTrigger("spe1");
             }
         }
     }
