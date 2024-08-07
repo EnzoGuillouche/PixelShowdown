@@ -37,14 +37,14 @@ public class UserInputs1 : MonoBehaviour
         {"-X", KeyCode.None},
         {"+Y", KeyCode.None},
         {"-Y", KeyCode.None},
-        {"Start", KeyCode.JoystickButton7},
-        {"Jump", KeyCode.JoystickButton0}, // A
-        {"Dash", KeyCode.JoystickButton5}, // RB
-        {"Crouch", KeyCode.JoystickButton8}, // left stick
-        {"Attack", KeyCode.JoystickButton1}, // B
-        {"SpeAttack", KeyCode.JoystickButton3}, // Y
-        {"Accept", KeyCode.JoystickButton0}, // A
-        {"Decline", KeyCode.JoystickButton1}, // B
+        {"Start", KeyCode.Joystick1Button7},
+        {"Jump", KeyCode.Joystick1Button0}, // A
+        {"Dash", KeyCode.Joystick1Button5}, // RB
+        {"Crouch", KeyCode.Joystick1Button8}, // left stick
+        {"Attack", KeyCode.Joystick1Button1}, // B
+        {"SpeAttack", KeyCode.Joystick1Button3}, // Y
+        {"Accept", KeyCode.Joystick1Button0}, // A
+        {"Decline", KeyCode.Joystick1Button1}, // B
     };
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]

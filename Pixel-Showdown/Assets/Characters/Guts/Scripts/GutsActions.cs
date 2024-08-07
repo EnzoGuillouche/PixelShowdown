@@ -17,6 +17,8 @@ public class GutsActions : MonoBehaviour
     public float dashDistance = 50f;
     public float dashDelay = 0.25f;
     public static float dashCooldown = 5f;
+    public static float spe1Cooldown = 5f;
+    public static float spe2Cooldown = 5f;
     public bool grounded;
     public bool canMove;
     public bool cannotGoLeft = false;
@@ -145,17 +147,31 @@ public class GutsActions : MonoBehaviour
                 animator.SetTrigger("attack1");
             }
         }
-        // apply the attacks conditions and actions
-        else if (Input.GetKeyDown(UserInputs1.currentInputs["SpeAttack"]) && canMove && grounded && !isCrouching){
-            animator.SetTrigger("attack");
-            if (rb.velocity.x != 0){ // side b
+    }
+    private void Special(){
+        // apply the special attacks conditions and actions
+        if (Input.GetKeyDown(UserInputs1.currentInputs["SpeAttack"]) && canMove && grounded && !isCrouching){
+            if (rb.velocity.x != 0 && spe2Cooldown >= 5f){ // side b
+                animator.SetTrigger("attack");
+                spe2Cooldown = 0f;
                 rb.velocity = new Vector2(0, rb.velocity.y);
                 animator.SetTrigger("spe2");
             }
-            else { // neutral b
+            else if (spe1Cooldown >= 5f){ // neutral b
+                animator.SetTrigger("attack");
+                spe1Cooldown = 0f;
+                rb.velocity = new Vector2(0, rb.velocity.y);
                 animator.SetTrigger("spe1");
             }
         }
+        // cooldowns
+        else {
+            if (spe1Cooldown < 5f)
+                spe1Cooldown += Time.deltaTime;
+            if (spe2Cooldown < 5f)
+                spe2Cooldown += Time.deltaTime;
+        }
+        
     }
     private void Flip()
     {
@@ -209,7 +225,7 @@ public class GutsActions : MonoBehaviour
 
     void Update()
     {
-           canMove = animator.GetBool("canMove");
+            canMove = animator.GetBool("canMove");
 
             Crouch();
 
@@ -217,9 +233,11 @@ public class GutsActions : MonoBehaviour
 
             Jump();
 
-           StartCoroutine(Dash());
+            StartCoroutine(Dash());
 
-           Attack();
+            Attack();
+
+            Special();
     }
     #endregion
 }

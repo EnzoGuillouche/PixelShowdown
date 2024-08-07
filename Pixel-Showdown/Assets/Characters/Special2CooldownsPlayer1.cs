@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DashCooldownBehavior : MonoBehaviour
+public class Special2CooldownsPlayer1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,6 @@ public class DashCooldownBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(GutsActions.dashCooldown, transform.localScale.y);
+        transform.localScale = new Vector3(GutsActions.spe2Cooldown, transform.localScale.y);
     }
 }
