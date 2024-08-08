@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class GutsActions : MonoBehaviour
+public class GutsActions1 : MonoBehaviour
 {
     #region Variables
     Rigidbody2D rb;
@@ -35,7 +35,7 @@ public class GutsActions : MonoBehaviour
     {
         if (canMove){
             // get the character's movement
-            moveInput = Input.GetKeyDown(UserInputs1.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal");
+            moveInput = Input.GetKeyDown(UserInputs1.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal1");
         
             // animations' conditions
             if (moveInput != 0)
@@ -131,7 +131,7 @@ public class GutsActions : MonoBehaviour
         }
     }
     private void Attack(){
-        float verticalInput = Input.GetKeyDown(UserInputs1.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical");
+        float verticalInput = Input.GetKeyDown(UserInputs1.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical1");
         // apply the attacks conditions and actions
         if (Input.GetKeyDown(UserInputs1.currentInputs["Attack"]) && canMove && grounded && !isCrouching){
             animator.SetTrigger("attack");

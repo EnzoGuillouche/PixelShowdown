@@ -801,7 +801,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AC_Player1
+  m_Name: AC_Guts
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: canMove
