@@ -433,7 +433,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 595495956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be2f3839ddce024789ed42632a48a6f, type: 3}
+  m_Script: {fileID: 11500000, guid: a58d5f6e9f2148b45a5035e168844ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &646936427
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 646936430}
   - component: {fileID: 646936429}
   m_Layer: 0
-  m_Name: Spe2
+  m_Name: 1Spe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 758647872}
   - component: {fileID: 758647874}
   m_Layer: 0
-  m_Name: Spe1
+  m_Name: 1Spe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,11 +1053,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1145484035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8890953197453390558, guid: 8e08ad8fb15f6e64e903ecf4a4f068fb, type: 3}
+  m_PrefabInstance: {fileID: 7001824406231883620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1145484042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8890953197453390557, guid: 8e08ad8fb15f6e64e903ecf4a4f068fb, type: 3}
   m_PrefabInstance: {fileID: 7001824406231883620}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1145484043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145484035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e16cd0e8587ecb45ad9e15249fb6e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
+  airSpeed: 8
+  jump: 15
+  Djump: 20
+  dashDistance: 50
+  dashDelay1: 0.25
+  dashDelay2: 0.25
+  grounded: 0
+  canMove: 0
+  cannotGoLeft: 0
+  cannotGoRight: 0
+  isCrouching: 0
+  hasJumpedTwice: 0
+  isFacingRight: 0
 --- !u!1 &1271962205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,7 +1261,7 @@ GameObject:
   - component: {fileID: 1995795640}
   - component: {fileID: 1995795641}
   m_Layer: 0
-  m_Name: Spe1
+  m_Name: 2Spe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1312,7 +1343,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995795637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95bfb647182f5e44086c5bf67de363b8, type: 3}
+  m_Script: {fileID: 11500000, guid: ae66440ec9a21974eb892b96506f5310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2062916378
@@ -1327,7 +1358,7 @@ GameObject:
   - component: {fileID: 2062916380}
   - component: {fileID: 2062916382}
   m_Layer: 0
-  m_Name: Spe2
+  m_Name: 2Spe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,7 +1440,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2062916378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79eb49a10cf96644c9a826ddf23ee292, type: 3}
+  m_Script: {fileID: 11500000, guid: df3f0e2f73530bb489c2f748be7f4dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2091109502
@@ -1563,5 +1594,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1145484043, guid: 8e08ad8fb15f6e64e903ecf4a4f068fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e08ad8fb15f6e64e903ecf4a4f068fb, type: 3}
