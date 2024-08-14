@@ -8,21 +8,17 @@ public class GutsActions : MonoBehaviour
 {
     #region Variables
     Rigidbody2D rb;
-    private string playerName;
+    private UserInputs inputName;
     private float moveInput;
     public float speed = 12f;
     public float airSpeed = 8f;
     public float jump = 15f;
     public float Djump = 20f;
     public float dashDistance = 50f;
-    public float dashDelay1 = 0.25f;
-    public float dashDelay2 = 0.25f;
-    public static float dashCooldown1 = 5f;
-    public static float dashCooldown2 = 5f;
-    public static float spe1Cooldown1 = 5f;
-    public static float spe1Cooldown2 = 5f;
-    public static float spe2Cooldown1 = 5f;
-    public static float spe2Cooldown2 = 5f;
+    public float dashDelay = 0.25f;
+    public float dashCooldown = 5f;
+    public float spe1Cooldown = 5f;
+    public float spe2Cooldown = 5f;
     public bool grounded;
     public bool canMove;
     public bool cannotGoLeft = false;
@@ -39,12 +35,7 @@ public class GutsActions : MonoBehaviour
     {
         if (canMove){
             // get the character's movement
-            if (playerName == "Player1") { 
-                moveInput = Input.GetKeyDown(UserInputs1.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal1");
-            }
-            else if (playerName == "Player2") {
-                moveInput = Input.GetKeyDown(UserInputs2.currentInputs["-X"]) ? -1 : Input.GetKeyDown(UserInputs2.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal2");
-            }
+            moveInput = Input.GetKeyDown(inputName.currentInputs["-X"]) ? -1 : Input.GetKeyDown(inputName.currentInputs["+X"]) ? 1 : Input.GetAxis("Horizontal" + transform.parent.name[transform.parent.name.Length - 1]);
         
             // animations' conditions
             if (moveInput != 0)
@@ -81,204 +72,102 @@ public class GutsActions : MonoBehaviour
     private void Jump() 
     {
         // apply the jump action (double jump management)
-        if (playerName == "Player1")
-        {
-            if (Input.GetKeyDown(UserInputs1.currentInputs["Jump"]) && !hasJumpedTwice && canMove) {
-                if (!grounded)
-                {
-                    hasJumpedTwice = true;
-                    if (rb.velocity.x < 0 && isFacingRight){
-                        animator.SetTrigger("reverseDoubleJumped");
-                    }
-                    else if (rb.velocity.x > 0 && !isFacingRight){
-                        animator.SetTrigger("reverseDoubleJumped");
-                    }
-                    else{
-                        animator.SetTrigger("doubleJumped");
-                    }
+        if (Input.GetKeyDown(inputName.currentInputs["Jump"]) && !hasJumpedTwice && canMove) {
+            if (!grounded)
+            {
+                hasJumpedTwice = true;
+                if (rb.velocity.x < 0 && isFacingRight){
+                    animator.SetTrigger("reverseDoubleJumped");
                 }
-                rb.velocity = new Vector2(rb.velocity.x, grounded ? jump : Djump);
-            }
-        } 
-        else {
-            if (Input.GetKeyDown(UserInputs2.currentInputs["Jump"]) && !hasJumpedTwice && canMove) {
-                if (!grounded)
-                {
-                    hasJumpedTwice = true;
-                    if (rb.velocity.x < 0 && isFacingRight){
-                        animator.SetTrigger("reverseDoubleJumped");
-                    }
-                    else if (rb.velocity.x > 0 && !isFacingRight){
-                        animator.SetTrigger("reverseDoubleJumped");
-                    }
-                    else{
-                        animator.SetTrigger("doubleJumped");
-                    }
+                else if (rb.velocity.x > 0 && !isFacingRight){
+                    animator.SetTrigger("reverseDoubleJumped");
                 }
-                rb.velocity = new Vector2(rb.velocity.x, grounded ? jump : Djump);
+                else{
+                    animator.SetTrigger("doubleJumped");
+                }
             }
+            rb.velocity = new Vector2(rb.velocity.x, grounded ? jump : Djump);
         }
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
     private void Crouch()
     {
         // apply the crouch conditions
-        if (playerName == "Player1"){
-            if (Input.GetKey(UserInputs1.currentInputs["Crouch"]) && grounded && canMove)
-            {
-                animator.SetBool("isCrouching", true);
-                isCrouching = true;
-            }
-            else 
-            {
-                animator.SetBool("isCrouching", false);
-                isCrouching = false;
-            }
+        if (Input.GetKey(inputName.currentInputs["Crouch"]) && grounded && canMove)
+        {
+            animator.SetBool("isCrouching", true);
+            isCrouching = true;
         }
-        else {
-            if (Input.GetKey(UserInputs2.currentInputs["Crouch"]) && grounded && canMove)
-            {
-                animator.SetBool("isCrouching", true);
-                isCrouching = true;
-            }
-            else 
-            {
-                animator.SetBool("isCrouching", false);
-                isCrouching = false;
-            }
+        else 
+        {
+            animator.SetBool("isCrouching", false);
+            isCrouching = false;
         }
     }
     private IEnumerator Dash()
     {
         // apply the velocity and the anim depending on dash conditions
-        if (playerName == "Player1"){
-            if (Input.GetKeyDown(UserInputs1.currentInputs["Dash"]) && canMove && dashCooldown1 >= 5f){
-                dashCooldown1 = 0f;
-                animator.SetBool("isDashing", true);
-                canMove = false;
-                rb.gravityScale = 0;
-                while (dashDelay1 > 0){
-                    rb.velocity = new Vector2(isFacingRight ? dashDistance : -dashDistance, 0);
-                    dashDelay1 -= Time.deltaTime;
-                    yield return null;
-                }
-                animator.SetBool("isDashing", false);
-                dashDelay1 = 0.25f;
-                canMove = true;
-                rb.gravityScale = 4;
-            }
-            // dash cooldown
-            else if (dashCooldown1 < 5f) {
-                dashCooldown1 += Time.deltaTime;
+        if (Input.GetKeyDown(inputName.currentInputs["Dash"]) && canMove && dashCooldown >= 5f){
+            dashCooldown = 0f;
+            animator.SetBool("isDashing", true);
+            canMove = false;
+            rb.gravityScale = 0;
+            while (dashDelay > 0){
+                rb.velocity = new Vector2(isFacingRight ? dashDistance : -dashDistance, 0);
+                dashDelay -= Time.deltaTime;
                 yield return null;
             }
+            animator.SetBool("isDashing", false);
+            dashDelay = 0.25f;
+            canMove = true;
+            rb.gravityScale = 4;
         }
-        else {
-            if (Input.GetKeyDown(UserInputs2.currentInputs["Dash"]) && canMove && dashCooldown2 >= 5f){
-                dashCooldown2 = 0f;
-                animator.SetBool("isDashing", true);
-                canMove = false;
-                rb.gravityScale = 0;
-                while (dashDelay2 > 0){
-                    rb.velocity = new Vector2(isFacingRight ? dashDistance : -dashDistance, 0);
-                    dashDelay2 -= Time.deltaTime;
-                    yield return null;
-                }
-                animator.SetBool("isDashing", false);
-                dashDelay2 = 0.25f;
-                canMove = true;
-                rb.gravityScale = 4;
-            }
-            // dash cooldown
-            else if (dashCooldown2 < 5f) {
-                dashCooldown2 += Time.deltaTime;
-                yield return null;
-            }
+        // dash cooldown
+        else if (dashCooldown < 5f) {
+            dashCooldown += Time.deltaTime;
+            yield return null;
         }
     }
     private void Attack(){
-        float verticalInput = playerName == "Player1" ? Input.GetKeyDown(UserInputs1.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs1.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical1") : Input.GetKeyDown(UserInputs2.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(UserInputs2.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical2");
+        float verticalInput = Input.GetKeyDown(inputName.currentInputs["-Y"]) ? -1 : Input.GetKeyDown(inputName.currentInputs["+Y"]) ? 1 : Input.GetAxis("Vertical" + transform.parent.name[transform.parent.name.Length - 1]);
         // apply the attacks conditions and actions
-        if (playerName == "Player1"){
-            if (Input.GetKeyDown(UserInputs1.currentInputs["Attack"]) && canMove && grounded && !isCrouching){
-                animator.SetTrigger("attack");
-                if (verticalInput > 0){ // up tilt
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("attack3");
-                }
-                else if (rb.velocity.x != 0){ // f tilt
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("attack2");
-                }
-                else { // jab
-                    animator.SetTrigger("attack1");
-                }
+        if (Input.GetKeyDown(inputName.currentInputs["Attack"]) && canMove && grounded && !isCrouching){
+            animator.SetTrigger("attack");
+            if (verticalInput > 0){ // up tilt
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("attack3");
             }
-        }
-        else {
-            if (Input.GetKeyDown(UserInputs2.currentInputs["Attack"]) && canMove && grounded && !isCrouching){
-                animator.SetTrigger("attack");
-                if (verticalInput > 0){ // up tilt
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("attack3");
-                }
-                else if (rb.velocity.x != 0){ // f tilt
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("attack2");
-                }
-                else { // jab
-                    animator.SetTrigger("attack1");
-                }
+            else if (rb.velocity.x != 0){ // f tilt
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("attack2");
+            }
+            else { // jab
+                animator.SetTrigger("attack1");
             }
         }
     }
     private void Special(){
         // apply the special attacks conditions and actions
-        if (playerName == "Player1"){
-            if (Input.GetKeyDown(UserInputs1.currentInputs["SpeAttack"]) && canMove && grounded && !isCrouching){
-                if (rb.velocity.x != 0 && spe2Cooldown1 >= 5f){ // side b
-                    animator.SetTrigger("attack");
-                    spe2Cooldown1 = 0f;
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("spe2");
-                }
-                else if (spe1Cooldown1 >= 5f){ // neutral b
-                    animator.SetTrigger("attack");
-                    spe1Cooldown1 = 0f;
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("spe1");
-                }
+        if (Input.GetKeyDown(inputName.currentInputs["SpeAttack"]) && canMove && grounded && !isCrouching){
+            if (rb.velocity.x != 0 && spe2Cooldown >= 5f){ // side b
+                animator.SetTrigger("attack");
+                spe2Cooldown = 0f;
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("spe2");
             }
-            // cooldowns
-            else {
-                if (spe1Cooldown1 < 5f)
-                    spe1Cooldown1 += Time.deltaTime;
-                if (spe2Cooldown1 < 5f)
-                    spe2Cooldown1 += Time.deltaTime;
+            else if (spe1Cooldown >= 5f){ // neutral b
+                animator.SetTrigger("attack");
+                spe1Cooldown = 0f;
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetTrigger("spe1");
             }
         }
+        // cooldowns
         else {
-            if (Input.GetKeyDown(UserInputs2.currentInputs["SpeAttack"]) && canMove && grounded && !isCrouching){
-                if (rb.velocity.x != 0 && spe2Cooldown2 >= 5f){ // side b
-                    animator.SetTrigger("attack");
-                    spe2Cooldown2 = 0f;
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("spe2");
-                }
-                else if (spe1Cooldown2 >= 5f){ // neutral b
-                    animator.SetTrigger("attack");
-                    spe1Cooldown2 = 0f;
-                    rb.velocity = new Vector2(0, rb.velocity.y);
-                    animator.SetTrigger("spe1");
-                }
-            }
-            // cooldowns
-            else {
-                if (spe1Cooldown2 < 5f)
-                    spe1Cooldown2 += Time.deltaTime;
-                if (spe2Cooldown2 < 5f)
-                    spe2Cooldown2 += Time.deltaTime;
-            }
+            if (spe1Cooldown < 5f)
+                spe1Cooldown += Time.deltaTime;
+            if (spe2Cooldown < 5f)
+                spe2Cooldown += Time.deltaTime;
         }
     }
     private void Flip()
@@ -329,7 +218,7 @@ public class GutsActions : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         rb.gravityScale = 4;
-        playerName = gameObject.name;
+        inputName = transform.parent.GetComponent<UserInputs>();
     }
 
     void Update()

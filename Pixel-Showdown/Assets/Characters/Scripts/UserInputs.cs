@@ -4,23 +4,25 @@ using UnityEngine;
 using System.IO;
 using System;
 
-public class UserInputs2 : MonoBehaviour
+public class UserInputs : MonoBehaviour
 {
+    private string userInputName;
+    private int controllerIndex;
     // accessible data
     public static float SoundVolume;
     public static float MusicVolume;
 
-    public static Dictionary<string, KeyCode> currentInputs;
+    public Dictionary<string, KeyCode> currentInputs;
 
-    public static Dictionary<string, KeyCode> Controller = new Dictionary<string, KeyCode>();
-    public static Dictionary<string, KeyCode> Keyboard = new Dictionary<string, KeyCode>();
+    public Dictionary<string, KeyCode> Controller = new Dictionary<string, KeyCode>();
+    public Dictionary<string, KeyCode> Keyboard = new Dictionary<string, KeyCode>();
 
-    public static Dictionary<string, KeyCode> DefaultKeyboard = new Dictionary<string, KeyCode>
+    public Dictionary<string, KeyCode> DefaultKeyboard = new Dictionary<string, KeyCode>
     {
-        {"+X", KeyCode.Semicolon},
-        {"-X", KeyCode.K},
-        {"+Y", KeyCode.O},
-        {"-Y", KeyCode.L},
+        {"+X", KeyCode.D},
+        {"-X", KeyCode.A},
+        {"+Y", KeyCode.W},
+        {"-Y", KeyCode.S},
         {"Start", KeyCode.Escape},
         {"Jump", KeyCode.Space},
         {"Dash", KeyCode.LeftShift},
@@ -31,37 +33,42 @@ public class UserInputs2 : MonoBehaviour
         {"Decline", KeyCode.Backspace},
     };
 
-    public static Dictionary<string, KeyCode> DefaultController = new Dictionary<string, KeyCode>
+    public Dictionary<string, KeyCode> DefaultController = new Dictionary<string, KeyCode>
     {
         {"+X", KeyCode.None},
         {"-X", KeyCode.None},
         {"+Y", KeyCode.None},
         {"-Y", KeyCode.None},
-        {"Start", KeyCode.Joystick2Button7},
-        {"Jump", KeyCode.Joystick2Button0}, // A
-        {"Dash", KeyCode.Joystick2Button5}, // RB
-        {"Crouch", KeyCode.Joystick2Button8}, // left stick
-        {"Attack", KeyCode.Joystick2Button1}, // B
-        {"SpeAttack", KeyCode.Joystick2Button3}, // Y
-        {"Accept", KeyCode.Joystick2Button0}, // A
-        {"Decline", KeyCode.Joystick2Button1}, // B
+        {"Start", KeyCode.JoystickButton7},
+        {"Jump", KeyCode.JoystickButton0}, // A
+        {"Dash", KeyCode.JoystickButton5}, // RB
+        {"Crouch", KeyCode.JoystickButton8}, // left stick
+        {"Attack", KeyCode.JoystickButton1}, // B
+        {"SpeAttack", KeyCode.JoystickButton3}, // Y
+        {"Accept", KeyCode.JoystickButton0}, // A
+        {"Decline", KeyCode.JoystickButton1}, // B
     };
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
-    static void Main()
+    private string[] keys = { "Start", "Jump", "Dash", "Crouch", "Attack", "SpeAttack", "Accept", "Decline" };
+    private KeyCode[] joystick1Buttons = { KeyCode.Joystick1Button7, KeyCode.Joystick1Button0, KeyCode.Joystick1Button5, KeyCode.Joystick1Button8, KeyCode.Joystick1Button1, KeyCode.Joystick1Button3, KeyCode.Joystick1Button0, KeyCode.Joystick1Button1 };
+    private KeyCode[] joystickButtons = { KeyCode.JoystickButton7, KeyCode.JoystickButton0, KeyCode.JoystickButton5, KeyCode.JoystickButton8, KeyCode.JoystickButton1, KeyCode.JoystickButton3, KeyCode.JoystickButton0, KeyCode.JoystickButton1 };
+
+    void Awake()
     {
+        userInputName = "/Player" + gameObject.name[gameObject.name.Length - 1]  + "Inputs.dat";
+        controllerIndex = int.Parse(gameObject.name[gameObject.name.Length - 1].ToString());
         LoadInput();
     }
 
     // load the input file  /  if it doesn't exist, it creates it
-    public static void LoadInput()
+    public void LoadInput()
     {
-        if (File.Exists(Application.dataPath + "/Player2Inputs.dat"))
+        if (File.Exists(Application.dataPath + userInputName))
         {
             Keyboard.Clear();
             Controller.Clear();
 
-            string[] content = File.ReadAllLines(Application.dataPath + "/Player2Inputs.dat");
+            string[] content = File.ReadAllLines(Application.dataPath + userInputName);
 
             bool KeyboardSetup = true;
 
@@ -94,12 +101,16 @@ public class UserInputs2 : MonoBehaviour
 
                 }
             }
+            
+            SetInputController();
 
             currentInputs = Controller;
         }
         else
         {
             CreateInput();
+
+            SetInputController();
         }
     }
 
@@ -117,13 +128,22 @@ public class UserInputs2 : MonoBehaviour
         }
     }
 
+    // set the inputs depending on the controller the player should use
+    public void SetInputController()
+    {
+        for (int i = 0; i < keys.Length; i++)
+        {
+            Controller[keys[i]] = (KeyCode)(Controller[keys[i]] + (joystick1Buttons[i] - joystickButtons[i]) * controllerIndex);
+        }
+    }
+
     // create the input file with default settings
-    public static void CreateInput()
+    public void CreateInput()
     {
         Keyboard = DefaultKeyboard;
         Controller = DefaultController;
 
-        using (StreamWriter SW = File.CreateText(Application.dataPath + "/Player2Inputs.dat"))
+        using (StreamWriter SW = File.CreateText(Application.dataPath + userInputName))
         {
             SW.WriteLine("Music");
             SW.WriteLine("1");
@@ -153,12 +173,12 @@ public class UserInputs2 : MonoBehaviour
     }
 
     // change a keybind
-    public static void ChangeInput(string ControllerName, string InputName, KeyCode Key)
+    public void ChangeInput(string ControllerName, string InputName, KeyCode Key)
     {
 
         try
         {
-            string[] content = File.ReadAllLines(Application.dataPath + "/Player2Inputs.dat");
+            string[] content = File.ReadAllLines(Application.dataPath + userInputName);
 
             bool ControllerSelected = false;
 
@@ -176,7 +196,7 @@ public class UserInputs2 : MonoBehaviour
                 }
             }
 
-            File.WriteAllLines(Application.dataPath + "/Player2Inputs.dat", content);
+            File.WriteAllLines(Application.dataPath + userInputName, content);
 
             LoadInput();
         }
