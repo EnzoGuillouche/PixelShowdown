@@ -42,7 +42,7 @@ public class UserInputs : MonoBehaviour
         {"Start", KeyCode.JoystickButton7},
         {"Jump", KeyCode.JoystickButton0}, // A
         {"Dash", KeyCode.JoystickButton5}, // RB
-        {"Crouch", KeyCode.JoystickButton8}, // left stick
+        {"Crouch", KeyCode.JoystickButton2}, // X
         {"Attack", KeyCode.JoystickButton1}, // B
         {"SpeAttack", KeyCode.JoystickButton3}, // Y
         {"Accept", KeyCode.JoystickButton0}, // A
@@ -50,8 +50,8 @@ public class UserInputs : MonoBehaviour
     };
 
     private string[] keys = { "Start", "Jump", "Dash", "Crouch", "Attack", "SpeAttack", "Accept", "Decline" };
-    private KeyCode[] joystick1Buttons = { KeyCode.Joystick1Button7, KeyCode.Joystick1Button0, KeyCode.Joystick1Button5, KeyCode.Joystick1Button8, KeyCode.Joystick1Button1, KeyCode.Joystick1Button3, KeyCode.Joystick1Button0, KeyCode.Joystick1Button1 };
-    private KeyCode[] joystickButtons = { KeyCode.JoystickButton7, KeyCode.JoystickButton0, KeyCode.JoystickButton5, KeyCode.JoystickButton8, KeyCode.JoystickButton1, KeyCode.JoystickButton3, KeyCode.JoystickButton0, KeyCode.JoystickButton1 };
+    private KeyCode[] joystick1Buttons = { KeyCode.Joystick1Button7, KeyCode.Joystick1Button0, KeyCode.Joystick1Button5, KeyCode.Joystick1Button2, KeyCode.Joystick1Button1, KeyCode.Joystick1Button3, KeyCode.Joystick1Button0, KeyCode.Joystick1Button1 };
+    private KeyCode[] joystickButtons = { KeyCode.JoystickButton7, KeyCode.JoystickButton0, KeyCode.JoystickButton5, KeyCode.JoystickButton2, KeyCode.JoystickButton1, KeyCode.JoystickButton3, KeyCode.JoystickButton0, KeyCode.JoystickButton1 };
 
     void Awake()
     {

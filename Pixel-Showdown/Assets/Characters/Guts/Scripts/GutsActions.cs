@@ -26,6 +26,9 @@ public class GutsActions : MonoBehaviour
     public bool isCrouching = false;
     public bool hasJumpedTwice;
     public bool isFacingRight = true;
+    public bool isAlive = true;
+    public int maxHealth = 100;
+    public int health;
     Animator animator;
     #endregion
 
@@ -170,6 +173,15 @@ public class GutsActions : MonoBehaviour
                 spe2Cooldown += Time.deltaTime;
         }
     }
+    public void Hit(int damage)
+    {
+        if (isAlive && !isCrouching){
+            health -= damage;
+        }
+        if (health <= 0){
+            animator.SetBool("isAlive", false);
+        }
+    }
     private void Flip()
     {
         transform.localScale *= new Vector2(-1, 1);
@@ -219,10 +231,19 @@ public class GutsActions : MonoBehaviour
         animator = GetComponent<Animator>();
         rb.gravityScale = 4;
         inputName = transform.parent.GetComponent<UserInputs>();
+        health = maxHealth;
+        if (transform.parent.name.EndsWith("2")){
+            Flip();
+            isFacingRight = !isFacingRight;
+        }
     }
 
     void Update()
     {
+        isAlive = animator.GetBool("isAlive");
+        if (!isAlive){
+            Debug.Log(gameObject.name + " is no longer alive");
+        } else {
             canMove = animator.GetBool("canMove");
 
             Crouch();
@@ -236,6 +257,7 @@ public class GutsActions : MonoBehaviour
             Attack();
 
             Special();
+        }
     }
     #endregion
 }
