@@ -13,6 +13,6 @@ public class DashCooldown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(transform.parent.GetChild(0).GetComponent<GutsActions>().dashCooldown*3, transform.localScale.y);
+        transform.localScale = new Vector3(transform.parent.GetChild(transform.parent.childCount - 1).GetComponent<GutsActions>().dashCooldown*3, transform.localScale.y);
     }
 }

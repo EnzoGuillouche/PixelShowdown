@@ -12,6 +12,6 @@ public class Special2Cooldown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(transform.parent.GetChild(0).GetComponent<GutsActions>().spe2Cooldown, transform.localScale.y);
+        transform.localScale = new Vector3(transform.parent.GetChild(transform.parent.childCount - 1).GetComponent<GutsActions>().spe2Cooldown, transform.localScale.y);
     }
 }
