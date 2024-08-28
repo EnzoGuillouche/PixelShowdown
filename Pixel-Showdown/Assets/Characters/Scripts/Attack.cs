@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    private int attackDamage = 10;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public int attackDamage;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        collision.GetComponent<GutsActions>().Hit(attackDamage);
+        other.GetComponent<GutsActions>().Hit(attackDamage);
     }
 }
