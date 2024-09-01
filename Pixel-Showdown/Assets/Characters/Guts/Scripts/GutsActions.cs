@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GutsActions : MonoBehaviour
 {
     #region Variables
-    Rigidbody2D rb;
+    private Rigidbody2D rb;
     private UserInputs inputName;
+    private Animator animator;
+    private GameManager gameManager;
     private float moveInput;
     public float speed = 12f;
     public float airSpeed = 8f;
@@ -19,6 +20,7 @@ public class GutsActions : MonoBehaviour
     public float dashCooldown = 5f;
     public float spe1Cooldown = 5f;
     public float spe2Cooldown = 5f;
+    public float deathDelay = 3f;
     public bool grounded;
     public bool canMove;
     public bool cannotGoLeft = false;
@@ -29,7 +31,6 @@ public class GutsActions : MonoBehaviour
     public bool isAlive = true;
     public int maxHealth = 100;
     public int health;
-    Animator animator;
     #endregion
 
     #region Actions Functions
@@ -180,7 +181,22 @@ public class GutsActions : MonoBehaviour
         }
         if (health <= 0){
             health = 0;
+            if (transform.parent.name.EndsWith("1")){
+                gameManager.lives1--;
+            }
+            else {
+                gameManager.lives2--;
+            }
             animator.SetBool("isAlive", false);
+        }
+    }
+    private IEnumerator Death(){
+        if (deathDelay > 0){
+            deathDelay -= Time.deltaTime;
+            yield return null;
+        }
+        else {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
     private void Flip()
@@ -233,9 +249,12 @@ public class GutsActions : MonoBehaviour
         rb.gravityScale = 4;
         inputName = transform.parent.GetComponent<UserInputs>();
         health = maxHealth;
+        gameManager = GameObject.Find("Manager").GetComponent<GameManager>();
         if (transform.parent.name.EndsWith("2")){
             Flip();
             isFacingRight = !isFacingRight;
+        }
+        else {
         }
     }
 
@@ -243,7 +262,8 @@ public class GutsActions : MonoBehaviour
     {
         isAlive = animator.GetBool("isAlive");
         if (!isAlive){
-            Debug.Log(gameObject.name + " is no longer alive");
+            Debug.Log(gameObject.name + transform.parent.name[transform.parent.name.Length - 1] + " is no longer alive");
+            StartCoroutine(Death());
         } else {
             canMove = animator.GetBool("canMove");
 
