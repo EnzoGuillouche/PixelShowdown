@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0744a041964d5a24db87303a5b4f39cf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - BAMBOO BRUSH
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e12bb33491652194aace9bedbb6f7090, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
