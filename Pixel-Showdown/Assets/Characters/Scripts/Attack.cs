@@ -7,6 +7,6 @@ public class Attack : MonoBehaviour
     public int attackDamage;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<GutsActions>().Hit(attackDamage);
+        if (other.GetComponent<PlayerActions>() != null) other.GetComponent<PlayerActions>().Hit(attackDamage);
     }
 }

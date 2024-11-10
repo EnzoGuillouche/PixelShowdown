@@ -13,6 +13,6 @@ public class HealthBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector3(15 * transform.parent.GetChild(transform.parent.childCount - 1).GetComponent<GutsActions>().health / transform.parent.GetChild(transform.parent.childCount - 1).GetComponent<GutsActions>().maxHealth, transform.localScale.y);
+        transform.localScale = new Vector2(15 * transform.parent.GetChild(transform.parent.childCount - 1).GetComponent<PlayerActions>().health / transform.parent.GetChild(transform.parent.childCount - 1).GetComponent<PlayerActions>().maxHealth, transform.localScale.y);
     }
 }

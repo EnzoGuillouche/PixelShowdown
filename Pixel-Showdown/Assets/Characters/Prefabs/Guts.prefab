@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a06fbf81e0a2b644b8b5226fea3d7fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackDamage: 0
 --- !u!1001 &644543839163636959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,7 +231,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1893896549689138872, guid: c434ea47c16576348a5ff190aff53648, type: 3}
   m_PrefabInstance: {fileID: 644543839163636959}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &293055764415073921
+--- !u!114 &8027051845008193020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,22 +243,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e16cd0e8587ecb45ad9e15249fb6e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
-  airSpeed: 8
-  jump: 15
-  Djump: 20
-  dashDistance: 50
-  dashDelay: 0.25
-  dashCooldown: 5
-  spe1Cooldown: 5
-  spe2Cooldown: 5
+  speed: 0
+  airSpeed: 0
+  jump: 0
+  Djump: 0
+  dashDistance: 0
+  dashDelay: 0
+  dashCooldown: 0
+  spe1Cooldown: 0
+  spe2Cooldown: 0
+  deathDelay: 0
   grounded: 0
-  canMove: 1
+  canMove: 0
   cannotGoLeft: 0
   cannotGoRight: 0
   isCrouching: 0
   hasJumpedTwice: 0
   isFacingRight: 1
   isAlive: 1
-  maxHealth: 100
+  maxHealth: 0
   health: 0

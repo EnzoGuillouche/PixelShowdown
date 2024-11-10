@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6268325124900058554}
   - component: {fileID: 1893896549689138873}
   - component: {fileID: 1538963471942587574}
+  - component: {fileID: -3960173054320214220}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -154,3 +155,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8735825, y: 2.8157568}
   m_EdgeRadius: 0
+--- !u!114 &-3960173054320214220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893896549689138872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1225aac59c305418926c67c2a900f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  airSpeed: 0
+  jump: 0
+  Djump: 0
+  dashDistance: 0
+  dashDelay: 0
+  dashCooldown: 0
+  spe1Cooldown: 0
+  spe2Cooldown: 0
+  deathDelay: 0
+  grounded: 0
+  canMove: 0
+  cannotGoLeft: 0
+  cannotGoRight: 0
+  isCrouching: 0
+  hasJumpedTwice: 0
+  isFacingRight: 1
+  isAlive: 1
+  maxHealth: 100
+  health: 0
